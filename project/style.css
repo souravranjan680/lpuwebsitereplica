@@ -1,0 +1,681 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  /* overflow: hidden; */
+  scroll-behavior:smooth ;
+
+}
+span{
+  color: #f38120;
+}
+/* ************NAVBAR******************* */
+.navheader{
+  position: sticky;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 9;
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.24);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5% 2%;
+}
+nav img {
+  width: 130px;
+}
+.navlinks {
+  flex: 1;
+  align-items: center;
+  text-align: right;
+}
+.navlinks ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+}
+.navlinks ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+.navlinks ul li a:hover {
+  color: #f38120;
+}
+.navhov::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  margin: auto;
+  background: #f38120;
+  transition: 0.5s;
+}
+.navlinks ul li a:hover::after {
+  width: 100%;
+  color: #f38120;
+}
+/* **************navbody***************** */
+.bodyimage img{
+  padding: 1% 0 0 0 ;
+  max-width: 100%;
+}
+/* ***************admission****************** */
+.admissionh1{
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 3rem;
+  background: url("/acadedmicpattern.webp");
+  vertical-align: center;
+}
+.header {
+  padding: 0% 2% 0% 2%;
+  /* background-image: url("/all.jpeg"); */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+}
+.headcontainerleft {
+  padding: 7% 4% 2% 0%;
+  width: 60%;
+  vertical-align: center;
+}
+.headcontainerleft h1{
+  font-size: 4rem;
+  margin-bottom: 2%;
+}
+.headcontainerleft h2{
+  font-size: 2rem;
+  margin-bottom: 3%;
+}
+.headcontainerleft h6{
+  font-size: .9rem;
+  line-height: 1.7;
+  margin-bottom: 2%;
+}
+
+/* ************form************** */
+.headcontainerright {
+  padding: 3% 0% 4% 0%;
+  width: 38%;
+}
+.headform {
+  border: 2px solid rgba(0, 0, 0, 0.033);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, 0.073);
+}
+.formbtn{
+  display: flex;
+  justify-content: center;
+  padding: 4%;
+}
+.herobtn {
+  /* margin: 0 0 0 -4px; */
+  padding: 2% 9%;
+  background-color: rgba(128, 128, 128, 0.042);
+  border: 1px solid rgba(0, 0, 0, 0.134);
+  border-radius: 2px;
+  transition: 0.5s;
+}
+.formbody{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  padding: 15px;
+}
+.formbody p{
+  font-size: 11px;
+}
+.activee{
+  background-color: #f38120;
+  color: #fff;
+  border: none;
+}
+.herobtn:hover {
+  color: #fff;
+  border: none;
+  background-color: #f38120;
+}
+.formtextarea{
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  padding: 2px;
+  overflow: hidden;
+}
+.formtextarea p{
+  padding: 0 0 2% 2%;
+}
+.inputtext{
+  background-color: transparent;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+  border: 0;
+}
+
+.footerbody{
+  display:flex ;
+  align-items:baseline;
+  padding: 12px;
+  font-size: 14px;
+}
+.register{
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+
+}
+#check{
+  width: 8%;
+}
+
+
+
+
+
+/* **************Academic************* */
+.academicpattern{
+  background-image: url("/acadedmicpattern.webp");
+}
+
+.academich1{
+  font-size: 40px;
+  text-align: center;
+  padding: 2rem;
+}
+.academicp{
+  width: 90%;
+  font-size: 18px;
+  margin: auto;
+  padding: 0% 5% 5% 5%;
+}
+.academicbox1,.academicbox2,.academicbox3,.academicbox4{
+  display: flex;
+  position: relative;
+}
+.academicorangebox1{
+  height: 58vh;
+  background-color: #f38120;
+  width: 40%;
+  position: relative;
+}
+.academicorangebox1 img{
+  top: 14%;
+  left: 30%;
+}
+.img{
+  position: absolute;
+  z-index: 1;
+  width: 30rem;
+  border: 10px solid #fff;
+}
+.academicorangebox2{
+  height: 58vh;
+  background-color: #f38120;
+  width: 40%;
+  position: relative;
+}
+.academicorangebox2 img{
+  top: 14%;
+  right: 30%;
+}
+.academicorangebox3{
+  height: 58vh;
+  background-color: #f38120;
+  width: 40%;
+  position: relative;
+}
+.academicorangebox3 img{
+  top: 14%;
+  left: 30%;
+}
+.academicorangebox4{
+  height: 58vh;
+  background-color: #f38120;
+  width: 40%;
+  position: relative;
+}
+.academicorangebox4 img{
+  top: 14%;
+  right: 30%;
+}
+.academictext1,.academictext3{
+  position: absolute;
+  width: 40%;
+  top: 35%;
+  left: 46%;
+}
+.academictext1 h2,.academictext2 h2,.academictext3 h2,.academictext4 h2{
+  margin-bottom: 2%;
+}
+
+.academictext22,.academictext44{
+  /* position: absolute;. */
+  margin-top: 10rem;
+  width: 50%;
+  margin-left:30% ;
+  /* right: 46%; */
+}
+.campush1{
+  font-size: 40px;
+  padding: 3rem;
+  text-align: center;
+  background: url(/acadedmicpattern.webp);
+}
+.campusdiv1,.campusdiv2,.campusdiv3,.campusdiv4{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 4%;
+  margin: 4%;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.355);
+}
+/* ************************placement***************** */
+.placementh1{
+  padding: 3rem;
+  background: url("/acadedmicpattern.webp");
+  text-align: center;
+  font-size: 40px;
+}
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+/* *********************slideshow4***************** */
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+} */
+
+/* ***********slideshow3********** */
+.mySlides3 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor3 {
+  cursor: pointer;
+}
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo3 {
+  opacity: 0.6;
+}
+
+.active,
+.demo3:hover {
+  opacity: 1;
+}
+.active1,
+.demo1:hover {
+  opacity: 1;
+}
+.active2,
+.demo2:hover {
+  opacity: 1;
+}
+
+/* *****************slideshow2***************** */
+.mySlides2 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor2 {
+  cursor: pointer;
+}
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo2 {
+  opacity: 0.6;
+}
+/* *********************slideshow1********************* */
+.mySlides1 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor1 {
+  cursor: pointer;
+}
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo1 {
+  opacity: 0.6;
+}
+/* ************************sideboximg************************* */
+.campusdiv1 .campusright{
+  width: 40%;
+  
+}
+.campusdiv2 .campusleft{
+  width: 40%;
+}
+.campusdiv3 .campusright{
+  width: 55%;
+}
+.campusdiv4 .campusleft{
+  width: 40%;
+}
+/* **********************sideboxtext******************** */
+.campusdiv1 .campusleft{
+  width: 60%;
+  position: relative;
+}
+.campusdiv2 .campusright{
+  width: 55%;
+  position: relative;
+}
+.campusdiv3 .campusleft{
+  width: 60%;
+  position: relative;
+}
+.campusdiv4 .campusright{
+  width: 55%;
+  position: relative;
+}
+/* **********************sideboxtexth1******************** */
+.sidetextboxh1{
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.7;
+}
+
+/* **********************sideboxtexth6******************** */
+.sideboxtexth6{
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 800;
+}
+.textboxclean{
+  width: 80%;
+  top: 25%;
+  left: 10%;
+  position: absolute;
+}
+.textboxunimall{
+  width: 100%;
+  top: 22%;
+  left: 5%;
+  position: absolute;
+}
+.textboxsecure{
+  width: 100%;
+  top: 25%;
+  position: absolute
+}
+.textboxuni{
+  width: 100%;
+  top: 15%;
+  left: 5%;
+  position: absolute
+}
+/* ***********************placement********************** */
+.placementcontainer{
+  width:90%;
+  box-shadow: 2px 2px 20px 4px rgba(0, 0, 0, 0.151);
+  margin: 8%;
+  position: relative;
+  border-radius: 4px;
+}
+.placementbody{
+  margin: auto;
+  width: 80%;
+}
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.placementcontainer img{
+  width: 100%;
+  
+}
+.placementcontainer p{
+  width: 90%;
+  margin: auto;
+  padding: 2% 4% 4% 4%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+.placementcontainer h4{
+  line-height: 1.8;
+  padding: 4% 4% 2% 4%;
+  font-weight: 500;
+  width: 90%;
+  margin: auto;
+  font-size: 18px;
+}
+.placementbtn{
+  width: 100%;
+  padding: 7%;
+  color: #f38120;
+  background: transparent;
+  border:0;
+  bottom: 0%;
+  top: 100%;
+  cursor: pointer;
+  border-top: 1px solid rgba(0, 0, 0, 0.047);
+}
+.researchh1{
+  background: url("/acadedmicpattern.webp");
+  padding: 3rem;
+  font-size: 40px;
+  text-align: center;
+}
+.researchcontainer{
+  width: 80%;
+  margin: auto;
+  padding: 4%;
+}
+.researcontainertext h6{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0% 0% 4% 0%;
+}
+.box {
+  font-size: 14px;
+  padding: 4%;
+  margin:4%;
+  color: #3589c0;
+  line-height: 1.8;
+  border-radius: 4px;
+  border-left: 5px solid #f38120;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.16);
+}
+.statics{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  padding: 4% 0% 2% 0%;
+}
+.data{
+  font-size: 20px;
+  padding: 1% 5% 1% 1%;
+  /* margin:4%; */
+  color: #3589c0;
+  line-height: 1.8;
+  border-radius: 4px;
+  border-left: 5px solid #f38120;
+  box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.16);
+}
+.staticsdata{
+  display: flex;
+  margin: 4% 0% 4% 0%;
+  justify-content: space-between;
+}
+.abouth1{
+  padding: 4%;
+  font-size: 40px;
+  text-align: center;
+  background: url("/acadedmicpattern.webp");
+}
+/* Slideshow container */
+.slideshow-container5 {
+  position: relative;
+  background: #f1f1f1f1;
+  padding: 2% 3% 2% 3%;
+}
+
+/* Slides */
+.mySlides5 {
+  display: none;
+  padding: 30px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.063);
+}
+
+/* ********************footer****************** */
+.footer{
+  background-color: rgba(0, 0, 0, 0.83);
+  color: rgba(255, 255, 255, 0.259);
+}
+.footerbody{
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.footerleftinside{
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.footerleftinside p{
+  border-left: 1px solid rgba(255, 255, 255, 0.21);
+  padding: 2%;
+  margin: 1%;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.footerleft{
+  width: 70%;
+}
+.footerright{
+  width: 60%;
+  padding: 1%;
+  margin: 1%;
+  
+}
+.footerrightp{
+  letter-spacing:1.8;
+  line-height: 1.6;
+  text-align: right;
+}
+.footerleftinside img{
+  width: 70px;
+  height:70px;
+  filter:grayscale(100%) brightness(.30);
+}
+.endcontainer{
+  background-color: rgba(0, 0, 0, 0.816);
+}
+.insideend{
+  margin: auto;
+  width: 80%;
+  display: flex;
+  /* margin: 8%; */
+  padding: 3% 2% 8% 2%;
+  /* border: 2px solid black; */
+  justify-content: space-around;
+
+}
+.insideend h2{
+  color: rgba(255, 255, 255, 0.773);
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0% 0% 6% 0%;
+}
+.insideend li{
+  line-height: 2;
+  list-style-type:disc;
+  color:rgba(255, 255, 255, 0.467) ;
+}
+.insideend li a{
+  color: rgba(255, 255, 255, 0.503);
+  text-decoration: none
+}
+.restline p{
+  color: rgba(255, 255, 255, 0.503);
+  padding: 4px;
+  line-height: 1.6;
+}
+.textinput{
+  display: flex;
+}
+#tex{
+  width: 100%;
+  border-radius: 4px;
+}
+.bttn{
+  background-color: #f38120;
+  border: 0;
+  border-radius: 4px;
+}
+/* ***************************Belowbutton********************** */
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px;
+  width: 4.2%;
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  background: transparent;
+  font-size: 18px; 
+}
+#myBtn img{
+  width: 100%;
+}
+
+#myBtn:hover img{
+  width: 80%;
+}
